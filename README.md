@@ -4,7 +4,7 @@ Projet de concept objet 2020.
 
 Simulation d'échange de message entre les différents dortoirs du livre Harry Potter.
 
-<<<Local installation>>>
+Local installation
   
 cd HarryPotterGameJs 
   
