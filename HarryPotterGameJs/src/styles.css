@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+.h61 {
+  margin: 5px;
+  padding-left: 15px;
+  flex: auto;
+  align-self: end;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+.content {
+  margin: 82px auto 32px;
+  padding: 0 16px;
+}

@@ -1,0 +1,6 @@
+.barGraph{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-self: center;
+}

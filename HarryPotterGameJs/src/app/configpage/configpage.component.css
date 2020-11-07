@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-self: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  padding: 2%;
+  margin: 2%;
+  background-color:  #1979d2;
+}
+
+.form2 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-self: center;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkZone {
+  color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+  margin: 3px;
+  font-size: 22px;
+  flex: 1;
+  align-self: center;
+  align-items: center;
+}
+

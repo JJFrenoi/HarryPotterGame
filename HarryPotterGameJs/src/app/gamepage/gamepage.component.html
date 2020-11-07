@@ -1,0 +1,19 @@
+<div class="content container-fluid" role="main">
+  <div class="buttonsToolBar">
+    <button type="button" class="btn btn-primary" (click)="start()" *ngIf="!isGameStarted">Start</button>
+    <button type="button" class="btn btn-danger" (click)="stop()" *ngIf="isGameStarted">Stop</button>
+  </div>
+  <div
+    *ngIf="winner !== undefined && winner !== null">
+      <h1 class="display-4">Gagnant {{winner.name}}</h1>
+  </div>
+  <p>
+    <ngb-progressbar [showValue]="true" type="success" [value]="round" [max]="roundMax"></ngb-progressbar>Round:
+    {{round}}
+  </p>
+  <app-map></app-map>
+  <div class="wizardGrid row row-cols-4">
+    <app-wizard class="col" #wizard *ngFor="let wizard of wizardList" [wizard]="wizard"></app-wizard>
+    <app-dementor class="col" #dementor *ngFor="let dementor of dementorList" [dementor]="dementor"></app-dementor>
+  </div>
+</div>

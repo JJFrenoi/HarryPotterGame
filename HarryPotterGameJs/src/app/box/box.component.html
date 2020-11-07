@@ -1,0 +1,6 @@
+<div class="box border border-dark" [style.color]="'black'" [style.background-color]="color" *ngIf="(display !== null)">
+    {{display}}
+</div>
+<div class="box border border-dark" [style.background-color]="color" *ngIf="(display === null)">
+    {{[this.posX,this.posY]}}
+</div>

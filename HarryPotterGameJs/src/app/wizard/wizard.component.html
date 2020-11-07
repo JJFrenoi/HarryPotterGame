@@ -1,0 +1,26 @@
+<div class="card bg-light mb-3">
+  <div class="card-header">
+    <span [style.color]="wizard.house.safeZone.color">
+      <h6 *ngIf="wizard.master"><b>Master {{wizard.name}}</b>, {{wizard.house.icon}}, position l:
+        {{wizard.currentBox.posX}} , c: {{wizard.currentBox.posY}}</h6>
+      <h6 *ngIf="!wizard.master"><b>{{wizard.name}}</b>, {{wizard.house.icon}}, position l:
+        {{wizard.currentBox.posX}} , c: {{wizard.currentBox.posY}}</h6>
+    </span>
+  </div>
+  <div class="card-body">
+    <!-- <img width="80" [src]="base64Image" /> -->
+    <h6 class="card-title" *ngIf="!wizard.master">id : {{wizard.id}} Energie : {{wizard.energiePoints}} </h6>
+    <h6 class="card-title" *ngIf="wizard.master">id : {{wizard.id}} </h6>
+    <p *ngIf="!wizard.master"><b>Statue: </b> {{wizard.status}} , <b>a été attaqué</b> {{wizard.wasAttack}}</p>
+    <p><b>Messages: Size: {{wizard.messages.length}} </b>
+      <span *ngFor="let message of wizard.messages">{{message.message}} | </span>
+    </p>
+    <p><b>Attaqué par un détraqueur :</b> {{wizard.dementorAttacked}} </p>
+    <p> <b>information sur la position :</b> ligne: {{wizard.currentBox.posX}} ,
+      colonne: {{wizard.currentBox.posY}} , couleur: {{wizard.currentBox.color}}</p>
+    <p> <b>information sur la maison :</b> {{wizard.house.id}} , {{wizard.house.name}} , {{wizard.house.icon}}
+    </p>
+    <p> <b>information sur l'alliance :</b> {{wizard.house.allianceName}}
+    </p>
+  </div>
+</div>

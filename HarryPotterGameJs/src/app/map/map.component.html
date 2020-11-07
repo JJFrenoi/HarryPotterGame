@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="map row" *ngFor="let boxs of map.zone; let r = index">
+    <app-box
+      class="box"
+      *ngFor="let box of boxs; let c = index"
+      [id]="box.id"
+      [posX]="box.posX"
+      [posY]="box.posY"
+      [color]="box.color"
+      [isObstacle]="box.isObstacle"
+    ></app-box>
+  </div>
+</div>

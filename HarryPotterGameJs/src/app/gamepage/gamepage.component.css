@@ -1,0 +1,10 @@
+.buttonsToolBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 82px auto 32px;
+}
+
+.wizardGrid {
+  margin-top: 32px;
+}

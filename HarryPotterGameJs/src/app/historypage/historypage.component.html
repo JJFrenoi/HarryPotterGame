@@ -1,0 +1,25 @@
+<div class="content container-fluid" role="main">
+  <google-chart *ngIf="data.length > 0" class="barGraph" #chart [title]="title" [type]="type" [data]="data"
+    [options]="options" [width]="width" [height]="height">
+  </google-chart>
+  <div class="row row-cols-4">
+
+    <div class="col" *ngFor="let game of gameHistory">
+      <div class="card bg-light mb-3">
+        <div class="card-header">
+          <span>
+            <h6><b>Gagnant: </b>{{game.winner}}</h6>
+          </span>
+        </div>
+        <div class="card-body">
+          <!-- <img width="80" [src]="base64Image" /> -->
+          <p><b>Game id: </b>{{game.gameId}}</p>
+          <p><b>Map: </b> lignes {{game.mapHeight}}, column {{game.mapWidth}}</p>
+          <p><b>Nombre d'obstacle :</b> {{game.nbObstacle}}</p>
+          <p><b>Nombre de round :</b> {{game.nbOfRound}}</p>
+          <p><b>Nombre de personnage :</b> {{game.nbOfwizard}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

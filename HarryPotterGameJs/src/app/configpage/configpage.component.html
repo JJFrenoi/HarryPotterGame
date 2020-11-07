@@ -1,0 +1,110 @@
+<div class="main content container-fluid">
+  <img
+    width="80"
+    alt="Angular Logo"
+    src="../assets/img/harryLogo2.jpg"
+    loading="lazy"
+  />
+  <h1>Harry Potter Game</h1>
+  <div class="form rounded form-group">
+    <form class="form2" [formGroup]="gameForm" (ngSubmit)="onSubmit()">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Carte</span>
+          <span class="input-group-text" id="basic-addon1"
+            >Lignes & Colonnes</span
+          >
+        </div>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Nombre de lignes"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+          formControlName="nbLine"
+        />
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Nombre de colonnes"
+          aria-label="colonnes"
+          aria-describedby="basic-addon1"
+          formControlName="nbColumn"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Personnages</span>
+        </div>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Nombre de personnages"
+          aria-label="personnages"
+          aria-describedby="basic-addon1"
+          formControlName="nbCharacteres"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"
+            >Nombre d'obstacle</span
+          >
+        </div>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Nombre d'obstacle"
+          aria-label="obstacle"
+          aria-describedby="basic-addon1"
+          formControlName="obstacle"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"
+            >Nombre de tours</span
+          >
+        </div>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Nombre de tours"
+          aria-label="round"
+          aria-describedby="basic-addon1"
+          formControlName="nbOfRound"
+        />
+      </div>
+      <div class="checkZone form-check"> 
+        <label class="form-check-label" for="exampleCheck1">Live Game</label>
+        <input
+          type="checkbox"
+          class="input-color form-check-input"
+          aria-label="liveGame"
+          aria-describedby="basic-addon1"
+          formControlName="liveGame"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Vitesse</span>
+        </div>
+        <select class="form-control" formControlName="speedForm">
+          <option *ngFor="let s of speeds" [ngValue]="s">
+            {{ s.id }}
+          </option>
+        </select>
+      </div>
+      <button
+        type="submit"
+        [disabled]="!gameForm.valid || pressOnce"
+        class="buttonSub btn btn-light"
+      >
+        Lancer le jeu
+      </button>
+    </form>
+  </div>
+  <ngb-alert *ngIf="error !== ''" type="danger" (close)="closeAlert()">{{
+    error
+  }}</ngb-alert>
+</div>

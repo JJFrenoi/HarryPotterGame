@@ -1,0 +1,80 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/HarryPotterGameJs/dist
+/HarryPotterGameJs/tmp
+/HarryPotterGameJs/out-tsc
+# Only exists if Bazel was run
+/HarryPotterGameJs/bazel-out
+
+# dependencies
+/HarryPotterGameJs/node_modules
+
+# profiling files
+/HarryPotterGameJs/chrome-profiler-events*.json
+/HarryPotterGameJs/speed-measure-plugin*.json
+
+# IDEs and editors
+/HarryPotterGameJs/.idea
+/HarryPotterGameJs/.project
+/HarryPotterGameJs/.classpath
+/HarryPotterGameJs/.c9/
+/HarryPotterGameJs/*.launch
+/HarryPotterGameJs/.settings/
+/HarryPotterGameJs/*.sublime-workspace
+
+# IDE - VSCode
+/HarryPotterGameJs/.vscode/*
+/HarryPotterGameJs/!.vscode/settings.json
+/HarryPotterGameJs/!.vscode/tasks.json
+/HarryPotterGameJs/!.vscode/launch.json
+/HarryPotterGameJs/!.vscode/extensions.json
+/HarryPotterGameJs/.history/*
+
+# misc
+/HarryPotterGameApi/.sass-cache
+/HarryPotterGameApi/connect.lock
+/HarryPotterGameApi/coverage
+/HarryPotterGameApi/libpeerconnection.log
+/HarryPotterGameApi/npm-debug.log
+/HarryPotterGameApi/yarn-error.log
+/HarryPotterGameApi/testem.log
+/HarryPotterGameApi/typings
+
+# System Files
+/HarryPotterGameApi/.DS_Store
+/HarryPotterGameApi/Thumbs.db
+/HarryPotterGameApi/HELP.md
+/HarryPotterGameApi/.gradle
+/HarryPotterGameApi/build/
+/HarryPotterGameApi/!gradle/wrapper/gradle-wrapper.jar
+/HarryPotterGameApi/!**/src/main/**/build/
+/HarryPotterGameApi/!**/src/test/**/build/
+
+### STS ###
+/HarryPotterGameApi/.apt_generated
+/HarryPotterGameApi/.classpath
+/HarryPotterGameApi/.factorypath
+/HarryPotterGameApi/.project
+/HarryPotterGameApi/.settings
+/HarryPotterGameApi/.springBeans
+/HarryPotterGameApi/.sts4-cache
+
+### IntelliJ IDEA ###
+/HarryPotterGameApi/.idea
+/HarryPotterGameApi/*.iws
+/HarryPotterGameApi/*.iml
+/HarryPotterGameApi/*.ipr
+/HarryPotterGameApi/out/
+/HarryPotterGameApi/!**/src/main/**/out/
+/HarryPotterGameApi/!**/src/test/**/out/
+
+### NetBeans ###
+/HarryPotterGameApi/nbproject/private/
+/HarryPotterGameApi/nbbuild/
+/HarryPotterGameApi/dist/
+/HarryPotterGameApi/nbdist/
+/HarryPotterGameApi/.nb-gradle/
+
+### VS Code ###
+/HarryPotterGameApi/.vscode/

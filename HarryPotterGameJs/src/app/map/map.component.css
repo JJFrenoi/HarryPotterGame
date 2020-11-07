@@ -1,0 +1,10 @@
+.map {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+.box {
+  flex: 1;
+  flex-grow: 1;
+  height: 50px;
+}
