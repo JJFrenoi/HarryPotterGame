@@ -14,6 +14,8 @@ npm install -g @angular/cli && npm install
 
 ng build --prod
 
+cd ..
+
 cd HarryPotterGameApi
 
 ./gradlew build
