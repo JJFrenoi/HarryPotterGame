@@ -18,4 +18,6 @@ cd HarryPotterGameApi
 
 cd ..
 
-Utilisateur docker? => docker-compose up -d
+Docker (requis) => docker-compose up -d
+
+http://localhost:7501
