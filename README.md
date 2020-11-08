@@ -10,7 +10,7 @@ Les classes du jeu se trouvent dans /HarryPotterGameApi/src/main/java/com/harryp
   
 cd HarryPotterGameJs 
   
-npm install -g @angular/cli && npm install
+npm install
 
 ng build --prod
 
